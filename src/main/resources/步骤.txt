@@ -1,3 +1,4 @@
+一.基本配置
 1.下载redis，启动redis服务端执行./redis-server.exe redis.windows.conf(测试机windows)
 
 2.springboot实现方式有jedis(springboot1.x)和lettuce(springboot2.x)两种
@@ -9,3 +10,8 @@
 这样的会导致我们通过redis desktop manager显示的我们key跟value的时候显示不是正常字符）
 
 5.，可封装redis常用方法，测试（controller中）
+
+二.发布订阅
+1.在RedisConfig 编写配置类
+
+2.在PubSubController编写发送方法接受

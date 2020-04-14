@@ -51,9 +51,9 @@ public class TestController {
     }
 
     /*
-排行榜
-time自定义类别，为各用户设定时间戳，根据时间顺序排序
- */
+    排行榜
+    time自定义类别，为各用户设定时间戳，根据时间顺序排序
+     */
     @GetMapping("redisdate")
     public Set redisDate(String time) {
         time = "redisdate";
@@ -74,9 +74,9 @@ time自定义类别，为各用户设定时间戳，根据时间顺序排序
     @GetMapping("redisoperate")
     public Object redisOperate(String userID, String oparate) {
 
-        redistemplate.opsForHash().put("oparate", userID+"-oparate", oparate);
+        redistemplate.opsForHash().put("oparate", userID + "-oparate", oparate);
 
-        Object oparate1 = redistemplate.opsForHash().get("oparate", userID+"-oparate");
+        Object oparate1 = redistemplate.opsForHash().get("oparate", userID + "-oparate");
         return oparate1;
     }
 }
