@@ -1,0 +1,11 @@
+1.下载redis，启动redis服务端执行./redis-server.exe redis.windows.conf(测试机windows)
+
+2.springboot实现方式有jedis(springboot1.x)和lettuce(springboot2.x)两种
+
+3.springboot pom导包
+
+4.lettuce方式：创建RedisConfig
+（RedisTemplate模板只能支持字符串，需设置序列化器，默认使用的JdkSerializationRedisSerializer
+这样的会导致我们通过redis desktop manager显示的我们key跟value的时候显示不是正常字符）
+
+5.，可封装redis常用方法，测试（controller中）
